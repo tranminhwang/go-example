@@ -11,8 +11,15 @@ import (
 
 func main() {
 	// webServiceGin()
-	// lissajous()
+	//lissajous(os.Stdout)
 	// fetchUrlsConcurrently()
+
+	/*
+		handler := func(w http.ResponseWriter, r *http.Request) {
+			lissajous(w)
+		}
+		http.ListenAndServe("localhost:8080", http.HandlerFunc(handler))
+	*/
 }
 
 func fetchUrlsConcurrently() {
